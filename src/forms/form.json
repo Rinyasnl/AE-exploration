@@ -1,0 +1,21 @@
+[
+    {
+        "name": "United States",
+        "capital": "Washington, D.C.",
+        "population": 331002651,
+        "region": "Americas"
+    },
+    {
+        "name": "Canada",
+        "capital": "Ottawa",
+        "population": 37742154,
+        "region": "Americas"
+    },
+    {
+        "name": "United Kingdom",
+        "capital": "London",
+        "population": 67886011,
+        "region": "Europe"
+    }
+    
+]

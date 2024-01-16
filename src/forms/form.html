@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.scss">
+    <title>Country Info</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Country Information</h1>
+        <form id="countryForm">
+            <label for="countrySelect">Select a Country:</label>
+            <select id="countrySelect" name="country">
+                <!-- Options will be dynamically populated using JavaScript -->
+            </select>
+            <button type="button" onclick="displayCountryInfo()">Get Info</button>
+        </form>
+        <div id="countryInfo" class="hidden">
+            <!-- Country information will be displayed here -->
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
