@@ -1,25 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var example_1 = require("../src/example");
+var sum = (0, example_1.add)(5, 3);
+console.log('Sum:', sum);
+var difference = (0, example_1.subtract)(8, 3);
+console.log('Difference:', difference);
