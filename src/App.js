@@ -9,11 +9,14 @@ import ProtectedPage from './Okta/protected';
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/protected" element={<ProtectedPage />} />
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/protected" element={<ProtectedPage />} />
+          <Route path="/user-profile" element={<UserProfile />} />
+        </Routes>
+      </ErrorBoundary>
     </Router>
   );
 };
