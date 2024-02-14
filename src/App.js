@@ -59,23 +59,43 @@
 
 // export default App;
 // App.js
+// import React from 'react';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { increment, incrementAsync } from './redux-saga/actions';
+
+// const App = () => {
+//   const dispatch = useDispatch();
+//   const count = useSelector((state) => state.count);
+
+//   return (
+//     <div>
+//       <h1>Counter: {count}</h1>
+//       <button onClick={() => dispatch(increment())}>Increment</button>
+//       <button onClick={() => dispatch(incrementAsync())}>Increment Async</button>
+//     </div>
+//   );
+// };
+
+// export default App;
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { increment, incrementAsync } from './redux-saga/actions';
+import './App.css';
+import CounterDisplay from './react/context/counterdisplay';
+import CounterButtons from './react/context/counterbutton';
+import { MyProvider } from './react/context/myprovider';
 
-const App = () => {
-  const dispatch = useDispatch();
-  const count = useSelector((state) => state.count);
-
+function App() {
   return (
-    <div>
-      <h1>Counter: {count}</h1>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(incrementAsync())}>Increment Async</button>
+    <div className="App">
+      <h1>Counter App</h1>
+      <MyProvider>
+        <CounterDisplay />
+        <CounterButtons />
+      </MyProvider>
     </div>
   );
-};
+}
 
 export default App;
+
 
 
